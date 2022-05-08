@@ -227,5 +227,6 @@ dependency-reduced-pom.xml
 
 ### AppImage ###
 Arkusia/
+release/*.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,java,bluej,eclipse,intellij
