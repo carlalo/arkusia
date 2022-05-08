@@ -225,4 +225,7 @@ hs_err_pid*
 target/
 dependency-reduced-pom.xml
 
+### AppImage ###
+Arkusia/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,java,bluej,eclipse,intellij
