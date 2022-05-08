@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.arkusia.ui.LoadController">
+   <center>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="208.0" prefWidth="223.0">
+               <children>
+                  <StackPane layoutX="12.0" layoutY="4.0" minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <Group rotate="180.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="200.0" stroke="#f2f2f2" strokeType="INSIDE" width="200.0" />
+                              <Arc fx:id="balken" fill="#0084ff" layoutX="100.0" layoutY="100.0" length="360.0" radiusX="100.0" radiusY="100.0" smooth="false" startAngle="90.0" stroke="#0084ff" strokeType="INSIDE" type="ROUND">
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </Arc>
+                           </children>
+                           <rotationAxis>
+                              <Point3D y="1.0" />
+                           </rotationAxis>
+                        </Group>
+                     </children>
+                  </StackPane>
+                  <Circle centerX="112.0" centerY="104.0" fill="#f2f2f2" layoutX="1.0" radius="92.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="prozent" alignment="CENTER" layoutX="1.0" layoutY="77.0" prefHeight="54.0" prefWidth="223.0" text="0%" textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </FlowPane>
+   </center>
+</BorderPane>
