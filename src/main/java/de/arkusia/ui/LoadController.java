@@ -13,11 +13,6 @@ public class LoadController
     @FXML
     Label prozent;
 
-    public LoadController()
-    {
-
-    }
-
     public void setProgress(int percent)
     {
         if(percent<0)
@@ -54,7 +49,6 @@ public class LoadController
             {
                 actualLength=actualLength+(0.4*upOrDown);
                 balken.setLength(actualLength);
-                System.out.println("Added next step. Actual Degree is: "+balken.getLength());
                 
                 String text=String.format("%d%%",toPercent(balken.getLength()));
                 Platform.runLater(()->prozent.setText(text));
@@ -80,7 +74,6 @@ public class LoadController
             {
                 actualLength=actualLength+(0.4*upOrDown);
                 balken.setLength(actualLength);
-                System.out.println("Added next step. Actual Degree is: "+balken.getLength());
                 
                 String text=String.format("%d%%",toPercent(balken.getLength()));
                 Platform.runLater(()->prozent.setText(text));

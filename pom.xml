@@ -7,7 +7,7 @@
     <main.class>de.arkusia.ui.Main</main.class>
 
     <!-- default JDK version to be used -->
-    <jdk.version>11</jdk.version>
+    <jdk.version>17</jdk.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>${jdk.version}</maven.compiler.source>
@@ -39,7 +39,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <release>11</release>
+          <release>${jdk.version}</release>
         </configuration>
       </plugin>
       <plugin>
